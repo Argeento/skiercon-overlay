@@ -13,7 +13,10 @@
     // Load overlay to canvas
     const canvas = document.querySelector<HTMLCanvasElement>('#canvas')
     const ctx = canvas.getContext('2d')
-    const overlayImage = await loadImageFromSrc('/overlay-2022.png')
+    const overlayImage = await loadImageFromSrc(
+      'https://argeento.github.io/skiercon-overlay/overlay-2022.png'
+    )
+
     ctx.drawImage(overlayImage, 0, 0)
 
     // Handle user input
